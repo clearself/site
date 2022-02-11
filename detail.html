@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			混凝土抗渗防水剂应用方法-网站已开通，等待完善资料
+		</title>
+		<meta id="description" name="description" content="这里是网站描述" />
+		<meta id="keywords" name="keywords" content="关键词,网站关键词" />
+		<script type="text/javascript" src="./js/jquery-1-7-2.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<!--jquery库-->
+		<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+		<!--自定义部分-->
+		<script type="text/javascript" src="js/myJs.js"></script>
+
+		<script type="text/javascript">
+			function doZoom(size) {
+				$("#lblContent p,#lblContent span,#lblContent a").css("font-size", size + "px");
+			}
+		</script>
+	</head>
+	<body>
+		<form id="form1">
+
+			<script type="text/javascript" language="javascript">
+				//①搜索开始
+				function checkSearch() {
+					if ($("#KeyName").val() == "" || $("#KeyName").val() == null) {
+						alert("请输入搜索关键词");
+						$("#KeyName").val("");
+						$("#KeyName").focus();
+						return false;
+					}
+					var Search_url = $("#key-Search").attr("value");
+					window.location.href = Search_url + "?q=" + escape($("#KeyName").val());
+				}
+
+				//②按下回车键出发某个按钮开始
+				document.onkeydown = function(event) {
+					e = event ? event : (window.event ? window.event : null);
+					if (e.keyCode == 13) {
+						document.getElementById("SearchButton").click();
+						return false;
+					}
+				}
+
+				//③加入收藏js代码开始
+				function AddFavorite(sURL, sTitle) {
+					try {
+						window.external.addFavorite(sURL, sTitle);
+					} catch (e) {
+						try {
+							window.sidebar.addPanel(sTitle, sURL, "");
+						} catch (e) {
+							alert("您使用的浏览器不支持此功能，请按“Ctrl+D”键手工加入收藏");
+						}
+					}
+				}
+			</script>
+
+			<!--⑧结束-->
+			<div class="header">
+				<div class="head wapper">
+					<div class="logo">
+						<a href="./index.html">
+							<a href='./index.html' title='某某建材有限公司'><img
+									src='./upload/img/20210923104826.png' alt='某某建材有限公司' /></a></a>
+					</div>
+					<div class="menu">
+						<ul>
+
+							<li>
+								<span><a href="./index.html">网站首页</a></span>
+
+							</li>
+
+							<li>
+								<span><a href="./about.html">公司简介</a></span>
+
+							</li>
+							<li>
+								<span><a href="./product.html">产品中心</a></span>
+
+							</li>
+
+<!-- 
+							<li class="menu_down">
+								<span><a href="Product.aspx?TypeID=1">产品中心</a></span>
+
+								<dl>
+
+									<dd><a href="Product.aspx?TypeID=1">混凝土膨胀剂类</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=2">混凝土防水剂类</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=3">混凝土密实抗裂剂类</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=4">抗侵蚀防腐材料</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=5">阻裂纤维材料</a></dd>
+
+								</dl>
+
+							</li>
+
+							<li>
+								<span><a href="PicList.aspx?ClassID=6">工程案例</a></span>
+
+							</li>
+
+							<li class="menu_down">
+								<span><a href="News.aspx?ClassID=7">新闻中心</a></span>
+
+								<dl>
+
+									<dd><a href="News.aspx?ClassID=7">公司新闻</a></dd>
+
+									<dd><a href="News.aspx?ClassID=8">行业资讯</a></dd>
+
+								</dl>
+
+							</li>
+
+							<li>
+								<span><a href="News.aspx?ClassID=2">人才招聘</a></span>
+
+							</li>
+ -->
+							<li>
+								<span><a href="contact.html">联系我们</a></span>
+
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="touch-top">
+				<div class="touch-top-wrapper">
+					<div class="touch-logo">
+						<a href="./index.html">
+							<a href='./index.html' title='某某建材有限公司'><img
+									src='./upload/img/20210923104826.png' alt='某某建材有限公司' /></a></a>
+					</div>
+					<div class="touch-navigation">
+						<div class="touch-toggle">
+							<ul>
+								<li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
+										data-drawer="drawer-section-menu"><i
+											class="touch-icon-menu"></i><span>导航</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="touch-toggle-content touch-top-home">
+					<div class="drawer-section drawer-section-language"></div>
+					<div class="drawer-section drawer-section-menu">
+						<div class="touch-menu" skinobjectzone="menu_1968">
+							<ul>
+
+								<li>
+									<a href="./index.html"><span>网站首页</span><i class="touch-arrow-down"></i></a>
+
+								</li>
+
+								<li>
+									<a href="./about.html"><span>公司简介</span><i class="touch-arrow-down"></i></a>
+
+								</li>
+								<li>
+									<a href="./product.html"><span>产品中心</span><i class="touch-arrow-down"></i></a>
+
+								</li>
+								<!-- <li>
+									<a href="javascript:;"><span>产品中心</span><i class="touch-arrow-down"></i></a>
+
+									<ul>
+
+										<li><a href="Product.aspx?TypeID=1"><span>混凝土膨胀剂类</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=2"><span>混凝土防水剂类</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=3"><span>混凝土密实抗裂剂类</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=4"><span>抗侵蚀防腐材料</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=5"><span>阻裂纤维材料</span></a></li>
+
+									</ul>
+
+								</li>
+
+								<li>
+									<a href="PicList.aspx?ClassID=6"><span>工程案例</span><i
+											class="touch-arrow-down"></i></a>
+
+								</li>
+
+								<li>
+									<a href="javascript:;"><span>新闻中心</span><i class="touch-arrow-down"></i></a>
+
+									<ul>
+
+										<li><a href="News.aspx?ClassID=7"><span>公司新闻</span></a></li>
+
+										<li><a href="News.aspx?ClassID=8"><span>行业资讯</span></a></li>
+
+									</ul>
+
+								</li>
+
+								<li>
+									<a href="News.aspx?ClassID=2"><span>人才招聘</span><i class="touch-arrow-down"></i></a>
+
+								</li> -->
+
+								<li>
+									<a href="contact.html"><span>联系我们</span><i class="touch-arrow-down"></i></a>
+
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+
+
+
+							$(".touch-toggle a").click(function(event) {
+
+								var className = $(this).attr("data-drawer");
+
+
+
+								if ($("." + className).css('display') == 'none') {
+
+									$("." + className).slideDown().siblings(".drawer-section").slideUp();
+
+								} else {
+
+									$(".drawer-section").slideUp();
+
+								}
+
+								event.stopPropagation();
+
+							});
+
+
+
+							/*$(document).click(function(){
+           
+                 $(".drawer-section").slideUp();
+           
+                })*/
+
+
+
+							$('.touch-menu a').click(function() {
+
+								if ($(this).next().is('ul')) {
+
+									if ($(this).next('ul').css('display') == 'none') {
+
+										$(this).next('ul').slideDown();
+
+										$(this).find('i').attr("class", "touch-arrow-up");
+
+									} else {
+
+										$(this).next('ul').slideUp();
+
+										$(this).next('ul').find('ul').slideUp();
+
+										$(this).find('i').attr("class", "touch-arrow-down");
+
+									}
+
+								}
+
+							});
+
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="nybanner"><img src="upload/img/20191219113251.jpg"></div>
+			<div class="weizhibg">
+				<div class="weizhi wapper">位置：首页 > <a href="News.aspx?ClassID=7">公司新闻</a></div>
+			</div>
+			<div class="inside wapper">
+
+				<!-- <div class="inside_left">
+					<div class="side_a">
+						<h2><span>新闻中心</span></h2>
+						<dl>
+
+							<dd class="hover"><a href="News.aspx?ClassID=7">公司新闻</a></dd>
+
+							<dd><a href="News.aspx?ClassID=8">行业资讯</a></dd>
+
+						</dl>
+					</div>
+				</div> -->
+
+				<div class="inside_right">
+					<div class="inside_con">
+
+
+						<!--Content Start-->
+						<table width="100%" align="center" cellspacing="10" cellpadding="0" border="0">
+
+							<tr>
+								<td align="center"
+									style="font-size: 14px; font-weight: bold; border-top: #ddd dashed 1px; padding-top: 5px;"
+									colspan="2">
+									<span id="lblTitle">混凝土抗渗防水剂应用方法</span>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" style="border-bottom: #ddd dashed 1px; padding-bottom: 5px;"
+									colspan="2">发表时间：<span id="lblPutdate">2019-12-16</span>&nbsp;&nbsp;&nbsp;&nbsp;
+									阅读次数：<script language="javascript" src="/check/news_view.aspx?id=30"></script>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									字体：【<a href="javascript:doZoom('18');">大</a><a
+										href="javascript:doZoom('14');">中</a><a href="javascript:doZoom('12');">小</a>】
+								</td>
+							</tr>
+							<tr>
+								<td align="left" colspan="2" style="font-size: 14px; font-family: 宋体;">
+									<span id="lblContent">
+										<p><strong
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">混凝土抗渗防水剂应用方法</strong><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">混凝土抗渗剂（系高分子成分）主要应用于混凝土的防水抗渗、堵漏、密实等，提高混凝土的自防水和抗渗性能，是道路桥梁、地铁、隧道、海防坝的首选材料，抗渗剂综合当前国内外新型防水抗渗材料的全新技术，在原有聚合物混凝土砂浆防水抗渗剂的基础上进一步研制开发，并充分采用全新技术的有机硅防水剂和高分子材料，经过一系列的复杂化学反应过程，制成品质超前的高分子混凝土抗渗剂。混凝土抗渗剂在与混凝土或砂浆层反应过程中，其主要成分高分子化合物的原子连接成线形并带有较长分支部网状，抗渗剂一般都是呈现乱向分布的立体结构，密布于混凝土或砂浆层的高分子结构，并完全堵塞混凝土或砂浆的毛细通道，使水泥及水泥砂浆具有憎水性，提高混凝土的抗渗能力，增加其密实度和抗渗性。抗渗剂在加热时不能熔融，只能变软；不能在任何溶剂中溶解，只能微溶胀；所以能够有效弥补在施工过程中各种微小瑕疵。抗渗剂具有耐高温、耐酸碱、耐腐蚀、无毒无味的特点；应用于各种防水工程中，其耐老化性能与建筑同寿命。</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">主要特点：</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">　　1、抗渗剂能带湿作业、不做找平层和保护层、操作简单、提前工期；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">　　2、抗渗剂无毒无味、对环境无污染，与水性装饰涂料混合使用时同样具有较好的防水效果；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">　　3、抗渗剂耐老化、不变质、抗龟裂性强、耐穿刺，能在各种防水工程中使用；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">　　4、抗渗剂防水抗渗能力极强，在地下工程和特种工程中应用效果更佳；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">　　5、具有耐高温、耐酸碱、耐腐蚀、无毒无味。</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">应用范围：</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">各种附建工程和单建式人防工程、工业与民用建筑的各种防水防潮抗渗；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">国家各种大、中、小型粮食储备库的防水防潮抗渗；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">各种污水池、净化池、水池、游泳池和地下工程的防水抗渗；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">地下道桥、隧道、地铁和涵洞的抗渗、防水及渗漏修补治理；</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">各种地下室的防水防潮、抗渗及渗漏维修等;</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">混凝土抗渗剂是防水混凝土、砂浆抗渗剂适用于工业和民用建筑地下室、水池、水塔及设备基础的刚性防水，以及其它处于地下和潮湿环境的砖砌体、混凝土及钢筋混泥土的防水和堵漏;</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">高效抗渗剂可大幅度提高混凝土的抗渗标号，具有补偿收缩的功能，提高混凝土的抗裂性。还具有较高的减水率，能大幅提高混凝土强度和减少水泥用量，提高混凝土或砂浆的整体性能。适用于各种工业、民用建筑工程、公路、铁路、自来水厂、污水处理厂、水电站、人防、堤坝和水池等各种标号的防水混凝土工程;</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">其性能优越，成本低廉。</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><strong
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">海岩建材有限公司</strong><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">主要生产加工混凝土外加剂、砂浆添加剂、高铁路桥专用干粉砂浆、海工防腐防水抗渗材料的专业厂家，致力于高铁、地铁、隧道、桥梁、公路、冶金、煤矿、油田、工业厂房、码头、海岸沿线、水利水电、能源、地下施工、岩土工程材料的生产、研发丶销售于一体的供应商。</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">我公司总部制造中心位于首都北京“</span><strong
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">海岩兴业</strong><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">”
+												“</span><strong
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">顺建兴业</strong><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">”专业从事特种工程材料生产和工程项目承包施工的高新技术中心。以通过ISO9000质量ISO14000环境管理体系认证，荣获中国工程建筑标准化协会，国家工程材料测试中心“中国工程建筑推荐产品”等称号。</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">我公司研发中心的科研实力雄厚，拥有国内先进的混凝土外加剂、干粉砂浆实验检测设备，行业专业知名专家顾问团队，进行混凝土外加剂技术的培训、指导、全力帮助商混站、中小外加剂厂传授技术，建造外加剂复配厂，诚招代理加盟，将以极大的热忱与客户共创未来！</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><strong
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">海岩建材有限公司</strong><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">生产混凝土外加剂、道路养护修补材料、高速铁路建设系统、海工阻锈防腐系统、隧道应用材料、特种干粉砂浆、建筑防水材料、混凝土界面处理材料、防静电和防腐地坪等产品广泛应用在高速铁路、海防工程、水利水电工程、冶金设备、石化安装、煤炭发电、机械轻工、路桥海工、市政交通、加气站、加油站等领域。其中铁路桥梁支座砂浆、压浆料、修补砂浆、高活性掺合料已成功应用在京沪高铁、合宁客运专线、郑西客运专线、津秦专线、兰渝铁路等重点工程，各项指标均达到甚至超过国内外同类产品；自流平工程抢修料已成功应用在六十年国庆的长安街大修工程中，并得到总参、公联、市政集团、城建道桥等总承包部和专家的一致好评。其中无碱速凝剂、混凝土防腐剂、钢筋、混凝土抗渗防水剂，水下不分散混凝土絮凝剂、HEA膨胀剂等数十种特种外加剂应用于海防、路桥防腐、隧道饮水工程、水利水电工程等到客户的肯定，其技术处于国际地位。</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">
+											</span><br data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">企业宗旨；“用服务与真诚来换取你的信任与支持，互惠互利，共创双赢！”</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">企业目标；“客户信赖、首选的品牌供货商”以最合理的价格、最完善的服务，提供最优秀的产品</span><br
+												data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">经营理念，专业、诚信、值得信赖，以质量求发展
+												以诚信树品牌</span><br data-filtered="filtered"
+												style="color: rgb(80, 80, 80); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal;" /><span
+												style="font-size: 14px; white-space: normal; color: rgb(77, 77, 77); font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, Arial, sans-serif;">我公司愿与国内外各界同仁志士竭诚合作，共创未来！</span>
+										</p>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">&nbsp;
+								</td>
+							</tr>
+							<tr>
+								<td align="left" colspan="2">上一篇：<a
+										href="NewsDetail.aspx?ID=29">混凝土外加剂的选择对混凝土性能的影响到底有多大?</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" colspan="2">下一篇：<a href="#">没有了</a>
+								</td>
+							</tr>
+
+						</table>
+						<!--Content End-->
+
+
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="footer">
+				<div class="foot wapper">
+					<div class="ft_left">
+						<div class="f_tel">
+							<img src="upload/img/20191211140043.png">&nbsp;&nbsp;电话：0513-00000000&nbsp;&nbsp;
+						</div>
+						<ul>
+							<li><span
+									style="font-family: Arial, Helvetica, sans-serif;">Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2016-
+									<script type="text/javascript">
+										var myDate = new Date();
+										document.write(myDate.getFullYear());
+									</script>
+								</span>&nbsp;
+								某某建材有限公司&nbsp;&nbsp;All Rights Reserved.
+								<br />
+								&nbsp;&nbsp;备案号：<a href='http://beian.miit.gov.cn/' target="_blank">苏ICP备00000000号</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f_ewm">
+						<img src="upload/img/20191231130103.jpg"><span>关注最新动态</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+
+		</form>
+	</body>
+</html>

@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			网站已开通，等待完善资料
+		</title>
+		<meta id="description" name="description" content="这里是网站描述" />
+		<meta id="keywords" name="keywords" content="关键词,网站关键词" />
+		<script type="text/javascript" src="js/jquery-1-7-2.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<!--jquery库-->
+		<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+		<!--自定义部分-->
+		<script type="text/javascript" src="js/myJs.js"></script>
+	</head>
+	<body>
+		<form id="form1">
+
+			<script type="text/javascript" language="javascript">
+				//①搜索开始
+				function checkSearch() {
+					if ($("#KeyName").val() == "" || $("#KeyName").val() == null) {
+						alert("请输入搜索关键词");
+						$("#KeyName").val("");
+						$("#KeyName").focus();
+						return false;
+					}
+					var Search_url = $("#key-Search").attr("value");
+					window.location.href = Search_url + "?q=" + escape($("#KeyName").val());
+				}
+
+				//②按下回车键出发某个按钮开始
+				document.onkeydown = function(event) {
+					e = event ? event : (window.event ? window.event : null);
+					if (e.keyCode == 13) {
+						document.getElementById("SearchButton").click();
+						return false;
+					}
+				}
+
+				//③加入收藏js代码开始
+				function AddFavorite(sURL, sTitle) {
+					try {
+						window.external.addFavorite(sURL, sTitle);
+					} catch (e) {
+						try {
+							window.sidebar.addPanel(sTitle, sURL, "");
+						} catch (e) {
+							alert("您使用的浏览器不支持此功能，请按“Ctrl+D”键手工加入收藏");
+						}
+					}
+				}
+			</script>
+
+			<!--⑧结束-->
+			<div class="header">
+				<div class="head wapper">
+					<div class="logo">
+						<a href="./index.html">
+							<a href="./index.html" title='某某建材有限公司'><img src='./upload/img/20210923104826.png'
+									alt='某某建材有限公司' /></a></a>
+					</div>
+					<div class="menu">
+						<ul>
+
+							<li>
+								<span><a href="./index.html">网站首页</a></span>
+
+							</li>
+
+							<li>
+								<span><a href="./about.html">公司简介</a></span>
+
+							</li>
+							<li>
+								<span><a href="./product.html">产品中心</a></span>
+							
+							</li>
+							
+
+							<!-- <li class="menu_down">
+								<span><a href="Product.aspx?TypeID=1">产品中心</a></span>
+
+								<dl>
+
+									<dd><a href="Product.aspx?TypeID=1">混凝土膨胀剂类</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=2">混凝土防水剂类</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=3">混凝土密实抗裂剂类</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=4">抗侵蚀防腐材料</a></dd>
+
+									<dd><a href="Product.aspx?TypeID=5">阻裂纤维材料</a></dd>
+
+								</dl>
+
+							</li>
+
+							<li>
+								<span><a href="PicList.aspx?ClassID=6">工程案例</a></span>
+
+							</li>
+
+							<li class="menu_down">
+								<span><a href="News.aspx?ClassID=7">新闻中心</a></span>
+
+								<dl>
+
+									<dd><a href="News.aspx?ClassID=7">公司新闻</a></dd>
+
+									<dd><a href="News.aspx?ClassID=8">行业资讯</a></dd>
+
+								</dl>
+
+							</li>
+
+							<li>
+								<span><a href="News.aspx?ClassID=2">人才招聘</a></span>
+
+							</li>
+ -->
+							<li>
+								<span><a href="contact.html">联系我们</a></span>
+
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="touch-top">
+				<div class="touch-top-wrapper">
+					<div class="touch-logo">
+						<a href="./index.html">
+							<a href="./index.html" title='某某建材有限公司'><img
+									src='./upload/img/20210923104826.png' alt='某某建材有限公司' />
+							</a>
+						</a>
+					</div>
+					<div class="touch-navigation">
+						<div class="touch-toggle">
+							<ul>
+								<li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
+										data-drawer="drawer-section-menu"><i
+											class="touch-icon-menu"></i><span>导航</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="touch-toggle-content touch-top-home">
+					<div class="drawer-section drawer-section-language"></div>
+					<div class="drawer-section drawer-section-menu">
+						<div class="touch-menu" skinobjectzone="menu_1968">
+							<ul>
+
+								<li>
+									<a href="./index.html"><span>网站首页</span><i class="touch-arrow-down"></i></a>
+
+								</li>
+
+								<li>
+									<a href="./about.html"><span>公司简介</span><i class="touch-arrow-down"></i></a>
+
+								</li>
+								<li>
+									<a href="./product.html"><span>产品中心</span><i class="touch-arrow-down"></i></a>
+								
+								</li>
+								<!-- <li>
+									<a href="javascript:;"><span>产品中心</span><i class="touch-arrow-down"></i></a>
+
+									<ul>
+
+										<li><a href="Product.aspx?TypeID=1"><span>混凝土膨胀剂类</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=2"><span>混凝土防水剂类</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=3"><span>混凝土密实抗裂剂类</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=4"><span>抗侵蚀防腐材料</span></a></li>
+
+										<li><a href="Product.aspx?TypeID=5"><span>阻裂纤维材料</span></a></li>
+
+									</ul>
+
+								</li>
+
+								<li>
+									<a href="PicList.aspx?ClassID=6"><span>工程案例</span><i
+											class="touch-arrow-down"></i></a>
+
+								</li>
+
+								<li>
+									<a href="javascript:;"><span>新闻中心</span><i class="touch-arrow-down"></i></a>
+
+									<ul>
+
+										<li><a href="News.aspx?ClassID=7"><span>公司新闻</span></a></li>
+
+										<li><a href="News.aspx?ClassID=8"><span>行业资讯</span></a></li>
+
+									</ul>
+
+								</li>
+
+								<li>
+									<a href="News.aspx?ClassID=2"><span>人才招聘</span><i class="touch-arrow-down"></i></a>
+
+								</li>
+ -->
+								<li>
+									<a href="contact.html"><span>联系我们</span><i
+											class="touch-arrow-down"></i></a>
+
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+
+
+
+							$(".touch-toggle a").click(function(event) {
+
+								var className = $(this).attr("data-drawer");
+
+
+
+								if ($("." + className).css('display') == 'none') {
+
+									$("." + className).slideDown().siblings(".drawer-section").slideUp();
+
+								} else {
+
+									$(".drawer-section").slideUp();
+
+								}
+
+								event.stopPropagation();
+
+							});
+
+
+							$('.touch-menu a').click(function() {
+
+								if ($(this).next().is('ul')) {
+
+									if ($(this).next('ul').css('display') == 'none') {
+
+										$(this).next('ul').slideDown();
+
+										$(this).find('i').attr("class", "touch-arrow-up");
+
+									} else {
+
+										$(this).next('ul').slideUp();
+
+										$(this).next('ul').find('ul').slideUp();
+
+										$(this).find('i').attr("class", "touch-arrow-down");
+
+									}
+
+								}
+
+							});
+
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="nybanner"><img src="upload/img/20191219113251.jpg"></div>
+			<div class="weizhibg">
+				<div class="weizhi wapper">位置：首页 > <a href="About.aspx?ClassID=4">公司简介</a></div>
+			</div>
+			<div class="inside wapper">
+
+				<!-- <div class="inside_left">
+					<div class="side_a">
+						<h2><span>产品中心</span></h2>
+						<dl>
+
+							<dd class="hover"><a href="Product.aspx?TypeID=1">混凝土膨胀剂类</a></dd>
+
+							<dd><a href="Product.aspx?TypeID=2"> 混凝土防水剂类</a></dd>
+
+							<dd><a href="Product.aspx?TypeID=3"> 混凝土密实抗裂剂类</a></dd>
+
+							<dd><a href="Product.aspx?TypeID=4"> 抗侵蚀防腐材料</a></dd>
+
+							<dd><a href="Product.aspx?TypeID=5"> 阻裂纤维材料</a></dd>
+
+						</dl>
+					</div>
+				</div> -->
+
+				<div class="inside_right">
+					<div class="inside_con">
+
+
+						<span id="lContent">
+							<p style="text-indent: 2em; text-align: left;">
+								江西省卓讯建材有限公司是一家集混凝土外加剂的生产、研发、销售、服务为一体的高新技术企业；公司自成立以来，一直专注于混凝土外加剂领域；公司通过ISO9001质量管理体系认证、ISO14001环境管理体系认证、OHSAS18001职业健康安全管理体系认证，获得AAA级信用企业证书，属于国家安全生产标准化三级企业；公司与江西省建筑材料科学研究院、南昌大学等多所科研院校在科研技术方面有全面的交流与合作。
+							</p>
+							<p style="text-indent: 2em; text-align: left;">
+								公司产品广泛应用于工业和民用建筑（地下室车库、工业厂房等）、人防工程、地下工程、隧道、铁路、桥梁、水厂及污水处理厂等。公司已与中铁建设、中国建设、中国水利水电建设集团、北京城建集团等多家大型国有企业合作，合作项目包括南昌市民中心、临空临港产业园、高新人民医院、儒乐湖金水隧道、湾里游客集散中心、九龙湖综合管廊多个省市级大型重点项目。其良好的性能和优质的服务深受广大用户好评，赢得了良好的市场声誉。
+							</p>
+							<p style="text-indent: 2em; text-align: left;">
+								公司始终坚持以管理创效益、以创新求发展、以服务拓市场、以质量树品牌的原则，以“诚信合作，创新共赢”的理念，为广大客户提供专业、便捷、周到的服务；公司一贯坚持“信誉至上、服务至上”的信念，致力于与社会各界同策同力，满足广大客户个性化需求，成为可信赖的专业合作伙伴。
+							</p>
+						</span>
+
+
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="footer">
+				<div class="foot wapper">
+					<div class="ft_left">
+						<div class="f_tel">
+							<img src="upload/img/20191211140043.png">&nbsp;&nbsp;电话：0513-00000000&nbsp;&nbsp;
+						</div>
+						<ul>
+							<li><span
+									style="font-family: Arial, Helvetica, sans-serif;">Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2016-
+									<script type="text/javascript">
+										var myDate = new Date();
+										document.write(myDate.getFullYear());
+									</script>
+								</span>&nbsp;
+								某某建材有限公司&nbsp;&nbsp;All Rights Reserved.
+								<br />
+								&nbsp;&nbsp;备案号：<a href='http://beian.miit.gov.cn/' target="_blank">苏ICP备00000000号</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f_ewm">
+						<img src="upload/img/20191231130103.jpg"><span>关注最新动态</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+
+		</form>
+	</body>
+</html>
